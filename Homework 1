@@ -1,1 +1,29 @@
+#include <stdio.h>
 
+int main(void)
+{
+    int grade;
+    printf("Please enter your grade:");
+    scanf("&d", &grade);
+    
+    if (grade < 0)
+    {
+              printf("Your grade can't be negative, please enter your grade correctly");
+              }
+    else if (grade > 0 && grade < 45)
+    {
+         printf("You failed the courseYou failed the course.");
+         }
+    else if (grade >= 45 && grade <= 100)
+    {
+         printf("You passed the course.");
+         }
+    else (grade > 100)
+    {
+         
+         printf("Your grade can't be grater than 100, please enter your grade correctly");
+         }
+         
+    return 0;
+    
+}
